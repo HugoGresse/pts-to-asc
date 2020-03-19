@@ -1,7 +1,7 @@
 # Convert .pts file to .asc or .ascii file
 
-It use node streams to be able to manage BIG file. 
-Useful to convert a file from ArcGIS pts to a point and use it in MeshLab for example. 
+It use Node streams to manage BIG file. 
+Useful to convert a file from ArcGIS .pts to a point/.asc file and use it in MeshLab for example. 
 
 **Input:** 
 
@@ -21,7 +21,7 @@ format: `x y z`  separated by spaces, one point per line
 364635.196000000000000 3777036 5.532944680000000 
 ```
 
-#Install
+# Install & use
 0. Install node/npm
 1. Clone this repo
 2. Install dependencies: `npm i`
@@ -34,4 +34,4 @@ format: `x y z`  separated by spaces, one point per line
 6. Process is finished when "Read completed" and "Write finished" is displayed
 7. New file name is `output.asc`
 
-Example of the commande: `node index.js -f points.pts`
+Example of the command: `node index.js -f points.pts`
